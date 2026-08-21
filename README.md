@@ -14,7 +14,7 @@ against a baseline.
 |---|---|---|
 | ⭐ **[apply-scout](https://github.com/P0w3r223/apply-scout)** | An LLM agent — a from-scratch tool loop with safety budgets and guardrails — that matches a job posting against a CV and GitHub evidence, with a trajectory-evaluation harness measuring success rate, citation fidelity, and cost per task. | [demo](https://p0w3r223.github.io/apply-scout/) |
 | **[mlops-car-price](https://github.com/P0w3r223/mlops-car-price)** | An MLOps layer around a price model: MLflow tracking and registry, a drift detector that is itself measured, and champion/challenger promotion decided by a paired bootstrap. | [demo](https://p0w3r223.github.io/mlops-car-price/) |
-| **[ab-lab](https://github.com/P0w3r223/ab-lab)** | An A/B-testing statistics package — power, SRM, sequential testing — where every method is validated by simulation against its theoretical guarantee. | [demo](https://p0w3r223.github.io/ab-lab/) |
+| **[ab-lab](https://github.com/P0w3r223/ab-lab)** | A 5% test is only 5% if you look once, count each user once, and test one metric. Peeking, clustered users and many metrics each turn a true null into a 25–66% false positive rate — measured on experiments with no effect to find, each paired with the correction that puts it back. | [demo](https://p0w3r223.github.io/ab-lab/) |
 | **[car-price-ml](https://github.com/P0w3r223/car-price-ml)** | The full ML cycle end-to-end: EDA, feature engineering, model comparison, SHAP, and a FastAPI + Docker prediction service. | [demo](https://p0w3r223.github.io/car-price-ml/) |
 
 ## What I work with
@@ -31,7 +31,7 @@ against a baseline.
 |---|---|---|
 | apply-scout | LLM agent + evaluation | https://p0w3r223.github.io/apply-scout/ |
 | mlops-car-price | MLOps / drift / promotion | https://p0w3r223.github.io/mlops-car-price/ |
-| ab-lab | Applied statistics | https://p0w3r223.github.io/ab-lab/ |
+| ab-lab | Applied statistics — when 5% is not 5% | https://p0w3r223.github.io/ab-lab/ |
 | car-price-ml | Full ML cycle + API | https://p0w3r223.github.io/car-price-ml/ |
 | wroclaw-air-insights | Data + 24h forecast | https://p0w3r223.github.io/wroclaw-air-insights/ |
 | it-job-radar | Data engineering | https://p0w3r223.github.io/it-job-radar/ |
