@@ -1,4 +1,4 @@
-# Patryk — AI Engineer / Data Scientist
+# Piotr — AI Engineer / Data Scientist
 
 I build complete, defensible data and AI systems in Python — from data acquisition, through
 models, to deployed and **evaluated** applications. Telecommunications student; open to
