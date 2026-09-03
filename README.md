@@ -1,8 +1,11 @@
-# Piotr — AI Engineer / Data Scientist
+# Piotr Cząstkiewicz — AI Engineer / Data Scientist
 
 I build complete, defensible data and AI systems in Python — from data acquisition, through
 models, to deployed and **evaluated** applications. Telecommunications student; open to
 **AI Engineer**, **Data Scientist**, and Junior Python / ML Engineer roles.
+
+📧 **[p0w3r2243@gmail.com](mailto:p0w3r2243@gmail.com)** — the quickest way to reach me about
+any of the above.
 
 Every project below is defensible in a technical interview: each non-trivial decision is
 documented (ADRs), results are **measured rather than asserted**, and models are always compared
