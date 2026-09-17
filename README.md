@@ -9,7 +9,8 @@ any of the above.
 
 Every project below is defensible in a technical interview: each non-trivial decision is
 documented (ADRs), results are **measured rather than asserted**, and models are always compared
-against a baseline.
+against a baseline. The same standard applies to the portfolio itself — see
+[portfolio-index](https://github.com/P0w3r223/portfolio-index) at the bottom of this page.
 
 ## Start here
 
@@ -51,3 +52,12 @@ against a baseline.
 ## Also on the profile
 
 - **[token-budget](https://github.com/P0w3r223/token-budget)** — a standard-library CLI that tracks token spend against a milestone budget.
+
+## How the portfolio is held together
+
+- **[portfolio-index](https://github.com/P0w3r223/portfolio-index)** — the index behind the
+  repositories above, and the record of how they are maintained: architecture decision records,
+  audits of the portfolio's own presentation, and a standard-library checker that holds every
+  published page to a written specification and **fails CI** when a gated clause does. Written
+  for me rather than for a reader, and public because a claim about engineering discipline is
+  worth what its record is worth.
