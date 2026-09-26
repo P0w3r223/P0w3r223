@@ -37,6 +37,16 @@ Start with the first four rows. Each project has tests and CI, and all but one h
 - **LLM:** Anthropic API, agents without a framework, evaluation harnesses, QLoRA pipeline (fine-tune in progress)
 - **Data:** DuckDB, Parquet, SQLite, data contracts
 - **MLOps:** MLflow, Docker, FastAPI, GitHub Actions
+- **Integrations:** MCP, Microsoft Graph, MSAL
+
+## Work
+
+**BIAP**, Intelligent Technologies division · Intern · July to September 2026
+
+Built Sufler, an MCP server and agent that connects Claude Code, Teams, GitHub and Jira for one
+team, and the kit that deploys it. Deployed as a pilot in one team; writes are off by default
+behind per-capability gates. [Code](https://github.com/P0w3r223/sufler) ·
+[one-page case study](sufler-case-study.md)
 
 ## How I work
 
