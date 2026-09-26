@@ -1,81 +1,50 @@
-# Piotr Cząstkiewicz — AI Engineer / Data Scientist / Data Engineer
+# Piotr Cząstkiewicz
 
-I build complete, defensible data and AI systems in Python — from data acquisition, through
-models, to deployed and **evaluated** applications. Telecommunications student; open to
-**AI Engineer**, **Data Scientist**, **Data Engineer**, and Junior Python / ML Engineer roles.
+I study telecommunications at Wrocław University of Science and Technology and I am looking for a
+junior AI Engineer role. I am also open to Data Scientist and ML Engineer positions. This summer I
+built an MCP server and agent for a team at BIAP during my internship.
 
-📧 **[p0w3r2243@gmail.com](mailto:p0w3r2243@gmail.com)** — the quickest way to reach me about
-any of the above.
+📧 [p0w3r2243@gmail.com](mailto:p0w3r2243@gmail.com)
 
-Every project below is defensible in a technical interview: each non-trivial decision is
-documented (ADRs), results are **measured rather than asserted**, and models are always compared
-against a baseline. The same standard applies to the portfolio itself — see
-[portfolio-index](https://github.com/P0w3r223/portfolio-index) at the bottom of this page.
+## Projects
 
-## Start here
+Start with the first four rows. Each project has tests and CI, and all but one have a live page.
 
-One project per track. **Each quoted line is the claim that project's own published page opens
-with** — not a summary written for this page — and the page carries the measurement behind it.
-
-### AI Engineer → [apply-scout](https://github.com/P0w3r223/apply-scout)
-
-> *This agent's retriever finds the evidence for 8 of the 27 requirements a repository can prove*
-
-An LLM job-matching agent with a from-scratch tool loop — and an evaluation that scores its own
-retriever and its own attack surface, offline from a committed recording.
-· **[live demo](https://p0w3r223.github.io/apply-scout/)**
-
-### Data Scientist → [ab-lab](https://github.com/P0w3r223/ab-lab)
-
-> *A 5% test is only 5% if you look once, count each user once, and test one metric.*
-
-Three ways an A/B experiment stops being the test it claims to be — peeking, clustered users,
-many metrics — each turning a true null into a **25.3%, 44.0% or 65.7%** false positive rate on
-simulated experiments where the truth is known, and each paired with the correction that puts it
-back. · **[live demo](https://p0w3r223.github.io/ab-lab/)**
-
-### Data Engineer → [it-job-radar](https://github.com/P0w3r223/it-job-radar)
-
-> *Most junior IT offers in Poland are not development jobs*
-
-**97 of 368** vacancies open to juniors are IT support and service-desk work — the largest single
-category. Measured honestly: a census population frame, bounded attribute sampling, a data
-contract, and a published Parquet artifact the page is built from.
-· **[live demo](https://p0w3r223.github.io/it-job-radar/)**
-
-## The rest of the index
-
-Same standard, and the same rule where it applies: **where a project publishes a page, the
-leading italic line is that page's own opening claim.** Two rows below are described instead and
-say why — `wroclaw-air-insights` opens with a label rather than a claim, and `token-budget`
-publishes no page at all.
-
-| Project | What it is, in its page's own words where it has one | Live |
+| Project | What it shows | Live |
 |---|---|---|
-| **[doc-extract](https://github.com/P0w3r223/doc-extract)** *(in progress)* | *Poland's national e-invoice schema checks nothing an accountant would* — the KSeF FA(3) schema carries zero assertions, so *net + VAT = gross* is unenforced by the national standard. Consistency rules fill that gap and become a label-free error detector. | [demo](https://p0w3r223.github.io/doc-extract/) |
-| **[mlops-car-price](https://github.com/P0w3r223/mlops-car-price)** | *The most accurate model is the one this layer refuses to deploy* — MLflow tracking and registry, a drift detector that is itself measured, and champion/challenger promotion decided by a paired bootstrap. | [demo](https://p0w3r223.github.io/mlops-car-price/) |
-| **[car-price-ml](https://github.com/P0w3r223/car-price-ml)** | *A 13.9 MB model prices this market better than a 590 MB one* — the full ML cycle end to end, a model that refuses the cars it cannot price, and a FastAPI + Docker service. It also [runs in your browser](https://p0w3r223.github.io/car-price-ml/app/). | [demo](https://p0w3r223.github.io/car-price-ml/) |
-| **[wroclaw-air-insights](https://github.com/P0w3r223/wroclaw-air-insights)** | A live 24-hour PM2.5 forecast that writes down what it published *before* the outcome exists and grades itself once those hours are measured. | [demo](https://p0w3r223.github.io/wroclaw-air-insights/) |
-| **[pl-review-sense](https://github.com/P0w3r223/pl-review-sense)** | *HerBERT reaches 0.986 against the baseline's 0.944* — Polish review sentiment on PolEmo 2.0, right on 38 reviews the baseline misses and wrong on 7 it gets, p < 0.0001. | [demo](https://p0w3r223.github.io/pl-review-sense/) |
-| **[pl-jobs-lora](https://github.com/P0w3r223/pl-jobs-lora)** *(in progress)* | *A frontier API reaches 94% of a model-free 0.28 ceiling* — a QLoRA fine-tune turning Polish job-posting prose into structured JSON, against honest API baselines. | [demo](https://p0w3r223.github.io/pl-jobs-lora/) |
-| **[auth-log-scan](https://github.com/P0w3r223/auth-log-scan)** | *108 failed logins in 7.1 hours — and only some of them are an attack* — brute force, user enumeration, and SSH logins that succeed from an address that had been failing. | [demo](https://p0w3r223.github.io/auth-log-scan/) |
-| **[mini-traceroute](https://github.com/P0w3r223/mini-traceroute)** | *A traceroute, one TTL at a time* — written from scratch in C++ over raw sockets, with a page that runs the same checksum, header parser and reply-matching rule in front of you. | [demo](https://p0w3r223.github.io/mini-traceroute/) |
-| **[token-budget](https://github.com/P0w3r223/token-budget)** | A standard-library CLI that tracks token spend against a milestone budget and enforces a hard ceiling. The one project here with no published page. | — |
+| **[apply-scout](https://github.com/P0w3r223/apply-scout)** · LLM agent | Job-matching agent on a tool loop written from scratch. On 8 annotated postings every cover-letter citation resolves to real evidence (fidelity 1.00), and the evaluation replays offline in CI. Its retriever finds evidence for 8 of 27 provable requirements, and the page reports that defect. | [demo](https://p0w3r223.github.io/apply-scout/) |
+| **[ab-lab](https://github.com/P0w3r223/ab-lab)** · statistics | A/B testing library checked by simulation. Peeking 20 times turns a 5% false-positive rate into 25.3%, and mSPRT brings it back to 1.2%. Clustered users (44.0%) and 20 metrics (65.7%) get the same treatment. | [demo](https://p0w3r223.github.io/ab-lab/) |
+| **[mlops-car-price](https://github.com/P0w3r223/mlops-car-price)** · MLOps | MLflow registry, drift monitoring and a promotion gate. The gate refused a model 4.0% more accurate because it was 103× larger and 5× slower at p95. | [demo](https://p0w3r223.github.io/mlops-car-price/) |
+| **[it-job-radar](https://github.com/P0w3r223/it-job-radar)** · data pipeline | Polish IT job market from a committed Parquet snapshot (2026-08-14): 97 of 368 junior vacancies are support or service-desk work, 72 are development. | [demo](https://p0w3r223.github.io/it-job-radar/) |
+| [doc-extract](https://github.com/P0w3r223/doc-extract) *(in progress)* · LLM extraction | Reads Polish KSeF e-invoices with an LLM and uses the invoice's own arithmetic to flag reading errors without labels: precision 100%, recall 76.2% on a weaker model's errors. Synthetic corpus so far; a real held-out set is the open milestone. | [demo](https://p0w3r223.github.io/doc-extract/) |
+| [car-price-ml](https://github.com/P0w3r223/car-price-ml) · ML service | LightGBM at 8 612 PLN MAE in 13.9 MB, against RandomForest at 8 798 PLN in 590 MB. The API returns HTTP 422 for cars outside the training domain, and the same model runs in the browser. | [demo](https://p0w3r223.github.io/car-price-ml/) · [app](https://p0w3r223.github.io/car-price-ml/app/) |
+| [pl-review-sense](https://github.com/P0w3r223/pl-review-sense) · NLP | Polish review sentiment: fine-tuned HerBERT at 0.986 macro-F1 against a TF-IDF baseline at 0.944, McNemar p = 3.1e-06. | [demo](https://p0w3r223.github.io/pl-review-sense/) |
+| [wroclaw-air-insights](https://github.com/P0w3r223/wroclaw-air-insights) · forecasting | Daily 24-hour PM2.5 forecast for Wrocław. MAE 6.97 against 8.61 µg/m³ for the naive rule, lower on 5 of 5 chronological folds. | [demo](https://p0w3r223.github.io/wroclaw-air-insights/) |
+| [pl-jobs-lora](https://github.com/P0w3r223/pl-jobs-lora) *(in progress)* · LLM fine-tuning | Polish job ads to JSON. Few-shot claude-haiku-4-5 reaches field F1 0.51 and Bielik-1.5B 0.30; the QLoRA run is not measured yet. | [demo](https://p0w3r223.github.io/pl-jobs-lora/) |
+| [auth-log-scan](https://github.com/P0w3r223/auth-log-scan) · security | OpenSSH log scanner, standard library only. On the demo log: 108 failed logins, 4 brute-force sources, 1 suspicious success. | [demo](https://p0w3r223.github.io/auth-log-scan/) |
+| [mini-traceroute](https://github.com/P0w3r223/mini-traceroute) · C++ | Traceroute over raw sockets in C++17, with 25 unit tests on Linux and Windows CI that need no root. | [demo](https://p0w3r223.github.io/mini-traceroute/) |
+| [token-budget](https://github.com/P0w3r223/token-budget) · tooling | Command-line tool that adds up Claude Code token spend per milestone and fails CI when a budget is exceeded. | none |
 
-## What I work with
+<p align="center">
+  <img src="https://github.com/P0w3r223/apply-scout/raw/main/docs/demo.gif" width="640"
+       alt="apply-scout run: the agent fetches the posting, reads the CV, probes GitHub for evidence, and prints a match report">
+</p>
 
-- **Languages** — Python (primary), C++, SQL, JavaScript, Bash / Linux
-- **ML / Data Science** — scikit-learn, LightGBM, pandas, SHAP, applied statistics, time-series forecasting
-- **LLM / AI** — Anthropic API, from-scratch agents, QLoRA fine-tuning, evaluation harnesses
-- **Data Engineering** — ETL pipelines, DuckDB / Parquet, SQLite, data contracts, GitHub Actions
-- **MLOps** — MLflow, drift monitoring, model registries, Docker, FastAPI, GitHub Actions
-- **NLP (Polish)** — TF-IDF baselines, HerBERT / Bielik fine-tuning, PolEmo
+## Stack
 
-## How the portfolio is held together
+- **Languages:** Python (main), SQL, C++, JavaScript, Bash
+- **ML and statistics:** scikit-learn, LightGBM, SHAP, pandas, SciPy, PyTorch with transformers (HerBERT), time-series forecasting
+- **LLM:** Anthropic API, agents without a framework, evaluation harnesses, QLoRA pipeline (fine-tune in progress)
+- **Data:** DuckDB, Parquet, SQLite, data contracts
+- **MLOps:** MLflow, Docker, FastAPI, GitHub Actions
 
-- **[portfolio-index](https://github.com/P0w3r223/portfolio-index)** — the index behind the
-  repositories above, and the record of how they are maintained: architecture decision records,
-  audits of the portfolio's own presentation, and a standard-library checker that holds every
-  published page to a written specification and **fails CI** when a gated clause does. Written
-  for me rather than for a reader, and public because a claim about engineering discipline is
-  worth what its record is worth.
+## How I work
+
+I build these projects with Claude Code as a pair programmer. I choose the problem, the baseline and
+the evaluation, and I read every change before it is merged; tests and CI decide what ships. My
+decisions are recorded as ADRs in each repository. Ask me about any file.
+
+---
+
+[portfolio-index](https://github.com/P0w3r223/portfolio-index) is the maintenance record behind these
+repositories: decision records, dated audits, and a checker that tests the published pages in CI.
