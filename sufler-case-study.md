@@ -26,6 +26,10 @@ comments, transcripts, documents) write a note, a GitHub issue or a Teams messag
   to Jira in the code, and the Jira account is never chosen by the model.
 - **Meeting notes from transcripts.** The agent turns a Teams meeting transcript into a structured
   note; participants are counted from the transcript, not by the model.
+- **Weekly shift reminders.** A sub-project, `Powiadomienia_teams`, checks Microsoft Shifts once a
+  week, messages people who have no shifts for the next working week with last week's pattern as a
+  draft, and writes the shifts back only after an explicit "yes".
+  [Code](https://github.com/P0w3r223/sufler/tree/Main/Powiadomienia_teams)
 
 ## What did not work (yet)
 
@@ -61,7 +65,7 @@ comments, transcripts, documents) write a note, a GitHub issue or a Teams messag
 | Decision records | 75 |
 | Test files | 209, including a security suite (injection, path traversal, secret leakage) |
 | Agent tools | 8 with the shell enabled, 14 without it |
-| Commits | 652 on the main branch |
+| Commits | 650+ on the main branch |
 | Monorepo migration | four sub-projects under one CI matrix; one imported with its full 36-commit history |
 
 </details>
